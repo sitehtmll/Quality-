@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Quality | Limpeza e Higienização de Estofados</title>
-  <meta name="description" content="Quality - Limpeza e higienização de estofados em Manaus. Sofás, colchões, bancos de carro e muito mais." />
+  <meta name="description" content="Quality - Limpeza e higienização de estofados em Manaus. Sofás, colchões, cadeiras, poltronas e bancos automotivos." />
   <style>
     * {
       margin: 0;
@@ -19,7 +19,7 @@
     body {
       font-family: Arial, Helvetica, sans-serif;
       background:
-        linear-gradient(rgba(0,0,0,0.72), rgba(0,0,0,0.82)),
+        linear-gradient(rgba(0,0,0,0.76), rgba(0,0,0,0.84)),
         url('https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=1600&q=80');
       background-size: cover;
       background-position: center;
@@ -29,7 +29,7 @@
     }
 
     .topbar {
-      background: rgba(0,0,0,0.35);
+      background: rgba(0,0,0,0.40);
       padding: 12px 20px;
       text-align: center;
       font-size: 15px;
@@ -37,7 +37,7 @@
     }
 
     .topbar a {
-      color: #6fd6ff;
+      color: #9be7ff;
       text-decoration: none;
       font-weight: bold;
     }
@@ -52,27 +52,28 @@
     }
 
     .hero {
-      max-width: 900px;
+      max-width: 960px;
       width: 100%;
-      background: rgba(0,0,0,0.40);
+      background: rgba(0,0,0,0.38);
       border: 1px solid rgba(255,255,255,0.10);
       border-radius: 24px;
-      padding: 35px 22px;
+      padding: 38px 24px;
       backdrop-filter: blur(4px);
-      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+      box-shadow: 0 12px 34px rgba(0,0,0,0.35);
     }
 
     .logo {
       width: 170px;
-      max-width: 70%;
+      max-width: 75%;
       border-radius: 50%;
       background: rgba(255,255,255,0.08);
       padding: 8px;
-      margin-bottom: 20px;
+      margin-bottom: 22px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.28);
     }
 
     h1 {
-      font-size: 40px;
+      font-size: 42px;
       margin-bottom: 10px;
       color: #ffffff;
     }
@@ -84,14 +85,14 @@
       font-weight: bold;
     }
 
-    .description {
-      max-width: 700px;
-      margin: 0 auto 28px;
+    .hero p.description {
+      max-width: 760px;
+      margin: 0 auto 26px;
       font-size: 17px;
-      color: #e8f8ff;
+      color: #e8faff;
     }
 
-    .cta-group {
+    .buttons {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -183,81 +184,74 @@
 
     .card p {
       font-size: 15px;
-      color: #f1fbff;
+      color: #f2fbff;
     }
 
-    .gallery {
+    .benefits {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 16px;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 18px;
+      margin-top: 25px;
     }
 
-    .gallery img {
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
-      border-radius: 16px;
-      border: 2px solid rgba(255,255,255,0.08);
+    .benefit {
       background: rgba(255,255,255,0.08);
-    }
-
-    .video-box {
-      text-align: center;
       padding: 20px;
-      background: rgba(255,255,255,0.08);
-      border-radius: 18px;
-    }
-
-    .video-box video {
-      width: 100%;
-      max-width: 800px;
       border-radius: 16px;
-      margin-top: 10px;
+      border: 1px solid rgba(255,255,255,0.08);
     }
 
-    .contact-box {
+    .benefit strong {
+      display: block;
+      margin-bottom: 8px;
+      color: #9be7ff;
+      font-size: 18px;
+    }
+
+    .cta-box {
       text-align: center;
     }
 
-    .contact-box p {
-      margin-bottom: 12px;
+    .cta-box p {
+      max-width: 780px;
+      margin: 0 auto 22px;
       font-size: 17px;
-      color: #eefcff;
+      color: #e8faff;
     }
 
     footer {
       text-align: center;
-      padding: 30px 20px;
-      color: #d7f6ff;
+      padding: 28px 20px 40px;
+      color: #d0ecf7;
       font-size: 14px;
     }
 
     .small {
       font-size: 14px;
       opacity: 0.9;
+      margin-top: 10px;
     }
 
     @media (max-width: 768px) {
       h1 {
-        font-size: 31px;
+        font-size: 34px;
       }
 
       .subtitle {
         font-size: 18px;
       }
 
-      .description {
+      .hero p.description {
         font-size: 16px;
+      }
+
+      h2 {
+        font-size: 28px;
       }
 
       .btn {
         width: 100%;
-        max-width: 320px;
-      }
-
-      .hero,
-      .section-box {
-        padding: 28px 16px;
+        min-width: unset;
       }
     }
   </style>
@@ -265,24 +259,29 @@
 <body>
 
   <div class="topbar">
-    📞 Atendimento rápido no WhatsApp:
-    <a href="https://wa.me/5592993564442" target="_blank">92 9 9356-4442</a>
+    Atendimento em <strong>Manaus - Amazonas</strong> | WhatsApp:
+    <a href="https://wa.me/5592993564442?text=Olá%20quero%20fazer%20um%20orçamento%20para%20limpeza%20de%20estofados" target="_blank">
+      (92) 99356-4442
+    </a>
   </div>
 
   <header>
     <div class="hero">
-      <img src="logo.png" alt="Logo Quality" class="logo">
+      <img src="IMG-20260107-WA0034(1).jpg" alt="Logo Quality" class="logo">
+
+      <div class="subtitle">Limpeza e Higienização Profissional</div>
       <h1>Quality</h1>
-      <div class="subtitle">Limpeza e higienização de estofados em Manaus</div>
+
       <p class="description">
-        Serviço profissional para deixar seu sofá, colchão, bancos de carro e estofados mais limpos,
-        higienizados e renovados. Atendimento com qualidade, cuidado e praticidade.
+        Cuidamos dos seus estofados com qualidade, higiene, atenção aos detalhes e atendimento profissional.
+        Trabalhamos com limpeza de sofás, colchões, poltronas, cadeiras e bancos automotivos em Manaus.
       </p>
 
-      <div class="cta-group">
-        <a class="btn btn-primary" href="https://wa.me/5592993564442?text=Olá!%20Quero%20fazer%20um%20orçamento.%20Qual%20é%20a%20sua%20zona%20em%20Manaus%20e%20qual%20serviço%20você%20precisa%3F%20Sofá%2C%20colchão%20ou%20banco%20de%20carro%3F" target="_blank">
-          Fazer orçamento
+      <div class="buttons">
+        <a class="btn btn-primary" href="https://wa.me/5592993564442?text=Olá%20quero%20fazer%20um%20orçamento%20para%20limpeza%20de%20estofados" target="_blank">
+          Fazer orçamento no WhatsApp
         </a>
+
         <a class="btn btn-outline" href="#servicos">
           Ver serviços
         </a>
@@ -294,96 +293,85 @@
     <div class="section-box">
       <h2>Nossos serviços</h2>
       <p class="section-text">
-        Trabalhamos com higienização e limpeza de estofados para ajudar você a manter seu ambiente
-        mais limpo, bonito e cheiroso.
+        Atendimento com foco em limpeza, higienização, renovação visual e cuidado com o seu estofado.
       </p>
 
       <div class="services">
         <div class="card">
-          <h3>🛋️ Sofás</h3>
-          <p>Limpeza profunda de sofás, remoção de sujeiras e renovação do estofado.</p>
+          <h3>🛋 Sofás</h3>
+          <p>Limpeza profunda para remoção de sujeiras, odores e aspecto de uso, deixando seu sofá mais bonito e higienizado.</p>
         </div>
 
         <div class="card">
-          <h3>🛏️ Colchões</h3>
-          <p>Higienização de colchões com mais cuidado para o seu conforto e bem-estar.</p>
+          <h3>🛏 Colchões</h3>
+          <p>Higienização ideal para manter mais limpeza, frescor e cuidado com o ambiente da sua família.</p>
         </div>
 
         <div class="card">
-          <h3>🚗 Bancos de carro</h3>
-          <p>Limpeza e higienização interna para deixar os bancos do veículo mais limpos.</p>
+          <h3>🚗 Bancos automotivos</h3>
+          <p>Serviço voltado para bancos de carro com mais cuidado e acabamento profissional.</p>
         </div>
 
         <div class="card">
-          <h3>✨ Estofados em geral</h3>
-          <p>Atendimento para diferentes tipos de estofados, com atenção aos detalhes.</p>
+          <h3>🪑 Cadeiras e poltronas</h3>
+          <p>Limpeza completa para estofados residenciais e comerciais com visual renovado e mais higiene.</p>
         </div>
-      </div>
-
-      <div class="cta-group" style="margin-top:30px;">
-        <a class="btn btn-primary" href="https://wa.me/5592993564442?text=Olá!%20Tenho%20interesse%20na%20limpeza%20de%20sofá." target="_blank">
-          Orçamento para sofá
-        </a>
-        <a class="btn btn-primary" href="https://wa.me/5592993564442?text=Olá!%20Tenho%20interesse%20na%20limpeza%20de%20colchão." target="_blank">
-          Orçamento para colchão
-        </a>
-        <a class="btn btn-primary" href="https://wa.me/5592993564442?text=Olá!%20Tenho%20interesse%20na%20limpeza%20de%20banco%20de%20carro." target="_blank">
-          Orçamento para carro
-        </a>
       </div>
     </div>
   </section>
 
-  <section id="galeria">
+  <section>
     <div class="section-box">
-      <h2>Galeria</h2>
+      <h2>Por que escolher a Quality?</h2>
       <p class="section-text">
-        Aqui você pode colocar as fotos do antes e depois, fotos dos serviços e resultados.
+        Nosso objetivo é entregar um serviço caprichado, com atenção, confiança e respeito ao cliente.
       </p>
 
-      <div class="gallery">
-        <img src="foto1.jpg" alt="Serviço 1">
-        <img src="foto2.jpg" alt="Serviço 2">
-        <img src="foto3.jpg" alt="Serviço 3">
-        <img src="foto4.jpg" alt="Serviço 4">
+      <div class="benefits">
+        <div class="benefit">
+          <strong>Atendimento de qualidade</strong>
+          Serviço feito com dedicação e atenção aos detalhes.
+        </div>
+
+        <div class="benefit">
+          <strong>Mais higiene para seu ambiente</strong>
+          Ideal para casa, quarto, sala, carro e espaços de uso diário.
+        </div>
+
+        <div class="benefit">
+          <strong>Agendamento rápido</strong>
+          Fale direto no WhatsApp e solicite seu orçamento com facilidade.
+        </div>
+
+        <div class="benefit">
+          <strong>Atendimento em Manaus</strong>
+          Praticidade para clientes da região com contato direto.
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="video">
-    <div class="section-box">
-      <h2>Vídeo</h2>
-      <p class="section-text">
-        Coloque aqui o vídeo do serviço para mostrar melhor o trabalho.
+  <section>
+    <div class="section-box cta-box">
+      <h2>Solicite seu orçamento</h2>
+      <p>
+        Clique no botão abaixo e fale agora pelo WhatsApp. Você pode enviar sua região e informar se deseja limpeza de sofá, colchão, poltrona, cadeira ou banco automotivo.
       </p>
 
-      <div class="video-box">
-        <p class="small">Salve o vídeo com o nome <strong>video.mp4</strong> na mesma pasta do site.</p>
-        <video controls>
-          <source src="video.mp4" type="video/mp4">
-          Seu navegador não suporta vídeo.
-        </video>
-      </div>
-    </div>
-  </section>
-
-  <section id="contato">
-    <div class="section-box contact-box">
-      <h2>Fale conosco</h2>
-      <p>📍 Manaus - Amazonas</p>
-      <p>📞 WhatsApp: 92 9 9356-4442</p>
-      <p>Atendimento rápido para orçamentos e informações.</p>
-
-      <div class="cta-group">
-        <a class="btn btn-primary" href="https://wa.me/5592993564442?text=Olá!%20Quero%20mais%20informações%20sobre%20os%20serviços%20da%20Quality." target="_blank">
-          Chamar no WhatsApp
+      <div class="buttons">
+        <a class="btn btn-primary" href="https://wa.me/5592993564442?text=Olá%20quero%20fazer%20um%20orçamento.%20Minha%20zona%20é:%20_____%20e%20o%20serviço%20é:%20_____" target="_blank">
+          Pedir orçamento agora
         </a>
+      </div>
+
+      <div class="small">
+        WhatsApp: (92) 99356-4442
       </div>
     </div>
   </section>
 
   <footer>
-    <p><strong>Quality</strong> - Limpeza e higienização de estofados</p>
+    <p><strong>Quality - Limpeza e Higienização de Estofados</strong></p>
     <p>Manaus - Amazonas</p>
   </footer>
 
