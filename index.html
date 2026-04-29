@@ -1,561 +1,1267 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>Quality | Limpeza e Higienização Profissional em Manaus</title>
+  <title>Quality | Higienização de Estofados em Manaus</title>
+  <meta name="description" content="Quality em Manaus: limpeza e higienização profissional de sofás, colchões, poltronas, cadeiras, tapetes e lavagem a seco. Atendimento em Adrianópolis, Ponta Negra, Vieiralves, Aleixo, Petrópolis e toda Manaus." />
+  <meta name="keywords" content="Quality, higienização de estofados Manaus, limpeza de sofá Manaus, lavagem a seco Manaus, colchão, poltrona, cadeira, tapete, Adrianópolis, Ponta Negra, Vieiralves, Aleixo, Petrópolis" />
+  <meta name="author" content="Quality Limpeza e Higienização" />
 
-<meta name="description"
-content="Higienização profissional de sofás, colchões, poltronas, cadeiras e tapetes em Manaus. Atendimento em Adrianópolis, Vieiralves, Aleixo, Petrópolis, Ponta Negra e toda Manaus.">
+  <meta property="og:title" content="Quality | Higienização de Estofados em Manaus" />
+  <meta property="og:description" content="Serviços premium de limpeza, lavagem a seco e higienização profissional de estofados em Manaus." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="sofa-01.jpg" />
 
-<style>
+  <link rel="icon" type="image/png" href="logo.png" />
 
-:root{
---azul1:#04111f;
---azul2:#08233f;
---azul3:#0b3158;
---azul4:#0d4f8f;
---azul5:#1398ff;
---azul6:#36b7ff;
---branco:#fff;
---cinza:#5d7084;
-}
+  <style>
+    :root {
+      --primary: #009dff;
+      --primary-2: #0b6df0;
+      --primary-3: #083f93;
+      --dark: #041327;
+      --dark-2: #071f3c;
+      --light: #f4f9ff;
+      --white: #ffffff;
+      --text: #17324d;
+      --muted: #6d86a0;
+      --line: rgba(255, 255, 255, 0.14);
+      --shadow: 0 20px 50px rgba(3, 22, 48, 0.22);
+      --radius-xl: 28px;
+      --radius-lg: 20px;
+      --radius-md: 14px;
+      --transition: all 0.3s ease;
+    }
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial;
-}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-body{
-background:#f4fbff;
-color:#11243a;
-}
+    html {
+      scroll-behavior: smooth;
+    }
 
-/* TOPO */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #edf6ff 0%, #ffffff 18%, #eef7ff 100%);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
 
-.topbar{
-background:linear-gradient(90deg,var(--azul1),var(--azul3),var(--azul5));
-color:white;
-padding:10px;
-text-align:center;
-font-size:14px;
-}
+    img {
+      max-width: 100%;
+      display: block;
+    }
 
-/* MENU */
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
 
-header{
-background:white;
-position:sticky;
-top:0;
-z-index:10;
-box-shadow:0 2px 8px rgba(0,0,0,.1);
-}
+    ul {
+      list-style: none;
+    }
 
-.nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:15px 25px;
-max-width:1200px;
-margin:auto;
-}
+    .container {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+    }
 
-.logo{
-font-size:22px;
-font-weight:bold;
-color:var(--azul4);
-}
+    .topbar {
+      background: linear-gradient(90deg, var(--dark), var(--primary-3));
+      color: var(--white);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
 
-.menu a{
-margin-left:20px;
-text-decoration:none;
-font-weight:bold;
-color:var(--azul2);
-}
+    .topbar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 0;
+      flex-wrap: wrap;
+      font-size: 14px;
+    }
 
-.menu a:hover{
-color:var(--azul5);
-}
+    .topbar-left,
+    .topbar-right {
+      display: flex;
+      gap: 18px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
 
-/* HERO */
+    .topbar strong {
+      color: #8fd7ff;
+    }
 
-.hero{
-background:linear-gradient(120deg,var(--azul1),var(--azul4),var(--azul5));
-color:white;
-padding:100px 20px;
-text-align:center;
-}
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      backdrop-filter: blur(14px);
+      background: rgba(255, 255, 255, 0.88);
+      border-bottom: 1px solid rgba(8, 63, 147, 0.08);
+    }
 
-.hero h1{
-font-size:52px;
-margin-bottom:20px;
-}
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      min-height: 84px;
+    }
 
-.hero p{
-font-size:20px;
-max-width:700px;
-margin:auto;
-margin-bottom:30px;
-}
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
 
-.botao{
-background:#25d366;
-padding:15px 30px;
-border-radius:40px;
-text-decoration:none;
-color:white;
-font-weight:bold;
-}
+    .logo img {
+      height: 58px;
+      width: auto;
+      object-fit: contain;
+    }
 
-/* SERVICOS */
+    .nav-links {
+      display: flex;
+      gap: 22px;
+      align-items: center;
+      font-weight: 700;
+      color: var(--dark-2);
+    }
 
-.servicos{
-padding:80px 20px;
-max-width:1200px;
-margin:auto;
-}
+    .nav-links a:hover {
+      color: var(--primary-2);
+    }
 
-.servicos h2{
-text-align:center;
-font-size:40px;
-margin-bottom:40px;
-color:var(--azul3);
-}
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 52px;
+      padding: 0 24px;
+      border-radius: 999px;
+      font-weight: 800;
+      border: none;
+      cursor: pointer;
+      transition: var(--transition);
+    }
 
-.grid{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:25px;
-}
+    .btn-primary {
+      background: linear-gradient(135deg, var(--primary), var(--primary-2));
+      color: var(--white);
+      box-shadow: 0 16px 35px rgba(0, 126, 255, 0.28);
+    }
 
-.card{
-background:white;
-padding:25px;
-border-radius:20px;
-box-shadow:0 8px 30px rgba(0,0,0,.08);
-}
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 20px 40px rgba(0, 126, 255, 0.35);
+    }
 
-.card h3{
-margin-bottom:10px;
-}
+    .btn-outline {
+      border: 2px solid rgba(255,255,255,0.28);
+      color: var(--white);
+      background: rgba(255,255,255,0.08);
+    }
 
-/* SOBRE */
+    .btn-outline:hover {
+      background: rgba(255,255,255,0.18);
+      transform: translateY(-2px);
+    }
 
-.sobre{
-background:white;
-padding:90px 20px;
-}
+    .hero {
+      position: relative;
+      min-height: 92vh;
+      display: flex;
+      align-items: center;
+      background:
+        linear-gradient(100deg, rgba(4, 19, 39, 0.92) 0%, rgba(7, 31, 60, 0.80) 45%, rgba(0, 126, 255, 0.18) 100%),
+        url('sofa-01.jpg') center/cover no-repeat;
+      color: var(--white);
+      overflow: hidden;
+    }
 
-.sobre-container{
-max-width:1100px;
-margin:auto;
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:40px;
-}
+    .hero::before,
+    .hero::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(20px);
+      opacity: 0.35;
+    }
 
-.sobre h2{
-font-size:40px;
-color:var(--azul3);
-margin-bottom:20px;
-}
+    .hero::before {
+      width: 320px;
+      height: 320px;
+      background: #00bbff;
+      top: -80px;
+      right: -90px;
+    }
 
-/* GALERIA */
+    .hero::after {
+      width: 260px;
+      height: 260px;
+      background: #005eff;
+      bottom: -90px;
+      left: -70px;
+    }
 
-.galeria{
-padding:80px 20px;
-background:#eef8ff;
-}
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 28px;
+      align-items: center;
+      padding: 80px 0;
+    }
 
-.galeria-grid{
-max-width:1100px;
-margin:auto;
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:20px;
-}
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.14);
+      color: #bde7ff;
+      padding: 10px 18px;
+      border-radius: 999px;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
 
-.galeria img{
-width:100%;
-border-radius:20px;
-}
+    .hero h1 {
+      font-size: clamp(36px, 6vw, 72px);
+      line-height: 1.05;
+      margin-bottom: 18px;
+      letter-spacing: -1.2px;
+    }
 
-/* BAIRROS */
+    .hero p {
+      font-size: 18px;
+      color: #d6eaff;
+      max-width: 700px;
+      margin-bottom: 28px;
+    }
 
-.bairros{
-padding:80px 20px;
-background:linear-gradient(120deg,var(--azul1),var(--azul4));
-color:white;
-}
+    .hero-buttons {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
 
-.bairros h2{
-text-align:center;
-margin-bottom:30px;
-font-size:40px;
-}
+    .hero-card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.16), rgba(255,255,255,0.08));
+      border: 1px solid rgba(255,255,255,0.16);
+      border-radius: var(--radius-xl);
+      padding: 26px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(12px);
+    }
 
-.lista-bairros{
-display:grid;
-grid-template-columns:repeat(5,1fr);
-gap:15px;
-max-width:1100px;
-margin:auto;
-}
+    .hero-card img {
+      width: 100%;
+      border-radius: 22px;
+      margin-bottom: 18px;
+      border: 1px solid rgba(255,255,255,0.16);
+    }
 
-.lista-bairros div{
-background:rgba(255,255,255,.15);
-padding:15px;
-border-radius:20px;
-text-align:center;
-}
+    .hero-card h3 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
 
-/* FORM */
+    .hero-card ul li {
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.12);
+      color: #e5f3ff;
+    }
 
-.form{
-padding:80px 20px;
-background:white;
-}
+    .hero-card ul li:last-child {
+      border-bottom: none;
+    }
 
-.form-container{
-max-width:700px;
-margin:auto;
-}
+    section {
+      padding: 92px 0;
+    }
 
-.form input,
-.form select,
-.form textarea{
+    .section-intro {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 46px;
+    }
 
-width:100%;
-padding:15px;
-margin-bottom:15px;
-border-radius:15px;
-border:1px solid #ccc;
+    .section-intro span {
+      display: inline-block;
+      padding: 8px 16px;
+      border-radius: 999px;
+      background: rgba(0, 157, 255, 0.09);
+      color: var(--primary-3);
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
 
-}
+    .section-intro h2 {
+      font-size: clamp(30px, 4vw, 52px);
+      line-height: 1.1;
+      margin-bottom: 14px;
+      color: var(--dark);
+    }
 
-.form button{
-background:#25d366;
-color:white;
-border:none;
-padding:18px;
-width:100%;
-font-weight:bold;
-border-radius:30px;
-}
+    .section-intro p {
+      color: var(--muted);
+      font-size: 17px;
+    }
 
-/* FOOTER */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
 
-footer{
-background:var(--azul1);
-color:white;
-padding:40px;
-text-align:center;
-}
+    .service-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 26px;
+      box-shadow: 0 14px 38px rgba(6, 47, 96, 0.08);
+      border: 1px solid rgba(8, 63, 147, 0.08);
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
 
-</style>
+    .service-card::before {
+      content: "";
+      position: absolute;
+      inset: 0 auto auto 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(90deg, var(--primary), var(--primary-2));
+    }
 
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 22px 44px rgba(6, 47, 96, 0.12);
+    }
+
+    .service-number {
+      font-size: 14px;
+      color: var(--primary-2);
+      font-weight: 900;
+      margin-bottom: 10px;
+    }
+
+    .service-card h3 {
+      font-size: 22px;
+      margin-bottom: 10px;
+      color: var(--dark);
+    }
+
+    .service-card p {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .about {
+      background: linear-gradient(180deg, #f7fbff 0%, #edf6ff 100%);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .about-images {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .about-images img {
+      border-radius: 24px;
+      min-height: 240px;
+      object-fit: cover;
+      box-shadow: 0 18px 36px rgba(7, 31, 60, 0.12);
+    }
+
+    .about-text h2 {
+      font-size: clamp(30px, 4vw, 50px);
+      line-height: 1.12;
+      margin-bottom: 18px;
+      color: var(--dark);
+    }
+
+    .about-text p {
+      color: var(--muted);
+      margin-bottom: 18px;
+      font-size: 17px;
+    }
+
+    .about-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 22px;
+    }
+
+    .about-list li {
+      background: var(--white);
+      border-radius: 16px;
+      padding: 14px 16px;
+      font-weight: 700;
+      color: var(--dark-2);
+      box-shadow: 0 10px 26px rgba(7, 31, 60, 0.06);
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .gallery-item {
+      position: relative;
+      border-radius: 22px;
+      overflow: hidden;
+      min-height: 280px;
+      box-shadow: 0 18px 36px rgba(7, 31, 60, 0.1);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.45s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.06);
+    }
+
+    .gallery-overlay {
+      position: absolute;
+      inset: auto 0 0 0;
+      padding: 18px;
+      background: linear-gradient(180deg, transparent 0%, rgba(4, 19, 39, 0.88) 100%);
+      color: var(--white);
+    }
+
+    .stats {
+      background: linear-gradient(120deg, var(--dark), var(--primary-3));
+      color: var(--white);
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .stat-card {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 22px;
+      padding: 28px;
+      text-align: center;
+      backdrop-filter: blur(8px);
+    }
+
+    .stat-card h3 {
+      font-size: 44px;
+      line-height: 1;
+      margin-bottom: 10px;
+      color: #8fd7ff;
+    }
+
+    .stat-card p {
+      color: #d7eaff;
+      font-weight: 700;
+    }
+
+    .areas {
+      background: linear-gradient(180deg, #ffffff 0%, #edf6ff 100%);
+    }
+
+    .areas-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 14px;
+    }
+
+    .area-card {
+      background: var(--white);
+      border-radius: 16px;
+      padding: 16px;
+      text-align: center;
+      font-weight: 800;
+      color: var(--dark-2);
+      box-shadow: 0 12px 28px rgba(7, 31, 60, 0.07);
+      border: 1px solid rgba(8, 63, 147, 0.08);
+    }
+
+    .quote {
+      background: linear-gradient(180deg, #f7fbff 0%, #ffffff 100%);
+    }
+
+    .quote-box {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 26px;
+      align-items: stretch;
+      background: var(--white);
+      border-radius: 30px;
+      box-shadow: 0 24px 55px rgba(7, 31, 60, 0.12);
+      overflow: hidden;
+      border: 1px solid rgba(8, 63, 147, 0.08);
+    }
+
+    .quote-info {
+      background:
+        linear-gradient(180deg, rgba(4, 19, 39, 0.9), rgba(11, 109, 240, 0.86)),
+        url('sofa-04.jpg') center/cover no-repeat;
+      color: var(--white);
+      padding: 38px;
+      min-height: 100%;
+    }
+
+    .quote-info h2 {
+      font-size: clamp(28px, 4vw, 46px);
+      line-height: 1.1;
+      margin-bottom: 16px;
+    }
+
+    .quote-info p {
+      color: #ddedff;
+      margin-bottom: 20px;
+    }
+
+    .quote-points li {
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.14);
+      font-weight: 700;
+    }
+
+    .quote-points li:last-child {
+      border-bottom: none;
+    }
+
+    .quote-form {
+      padding: 38px;
+    }
+
+    .quote-form h3 {
+      font-size: 30px;
+      color: var(--dark);
+      margin-bottom: 8px;
+    }
+
+    .quote-form p {
+      color: var(--muted);
+      margin-bottom: 24px;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+
+    .form-group.full {
+      grid-column: 1 / -1;
+    }
+
+    label {
+      font-size: 14px;
+      font-weight: 800;
+      color: var(--dark-2);
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      border: 1px solid rgba(8, 63, 147, 0.14);
+      background: #f7fbff;
+      color: var(--text);
+      border-radius: 14px;
+      padding: 15px 16px;
+      outline: none;
+      font-size: 15px;
+      transition: var(--transition);
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: var(--primary-2);
+      box-shadow: 0 0 0 4px rgba(0, 126, 255, 0.1);
+      background: var(--white);
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 130px;
+    }
+
+    .contacts-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .contact-card {
+      background: var(--white);
+      border-radius: 22px;
+      padding: 26px;
+      border: 1px solid rgba(8, 63, 147, 0.08);
+      box-shadow: 0 16px 34px rgba(7, 31, 60, 0.08);
+    }
+
+    .contact-card h3 {
+      font-size: 22px;
+      color: var(--dark);
+      margin-bottom: 8px;
+    }
+
+    .contact-card .role {
+      color: var(--primary-2);
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+
+    .contact-card p,
+    .contact-card a {
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    .cta-band {
+      padding: 0 0 92px;
+    }
+
+    .cta-box {
+      background: linear-gradient(135deg, var(--primary), var(--primary-3));
+      border-radius: 30px;
+      padding: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      color: var(--white);
+      box-shadow: 0 24px 50px rgba(0, 126, 255, 0.25);
+    }
+
+    .cta-box h2 {
+      font-size: clamp(28px, 4vw, 44px);
+      line-height: 1.12;
+      margin-bottom: 8px;
+    }
+
+    .cta-box p {
+      color: #e6f4ff;
+      max-width: 700px;
+    }
+
+    footer {
+      background: linear-gradient(180deg, var(--dark) 0%, #020d1d 100%);
+      color: var(--white);
+      padding: 36px 0;
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .footer-brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .footer-brand img {
+      height: 48px;
+      width: auto;
+    }
+
+    .footer-brand p,
+    .footer-links a {
+      color: #cfe6ff;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 999;
+      width: 62px;
+      height: 62px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #25d366, #17b858);
+      color: var(--white);
+      font-size: 26px;
+      box-shadow: 0 18px 36px rgba(37, 211, 102, 0.28);
+      border: 3px solid rgba(255,255,255,0.16);
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.06);
+    }
+
+    @media (max-width: 1080px) {
+      .hero-content,
+      .about-grid,
+      .quote-box {
+        grid-template-columns: 1fr;
+      }
+
+      .services-grid,
+      .stats-grid,
+      .contacts-grid,
+      .areas-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 860px) {
+      .nav-links {
+        display: none;
+      }
+
+      .form-grid,
+      .about-list,
+      .services-grid,
+      .stats-grid,
+      .gallery-grid,
+      .contacts-grid,
+      .about-images,
+      .areas-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cta-box,
+      .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .hero {
+        min-height: auto;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .btn {
+        width: 100%;
+      }
+
+      .hero-buttons {
+        flex-direction: column;
+      }
+
+      .quote-form,
+      .quote-info,
+      .service-card,
+      .contact-card,
+      .stat-card {
+        padding: 22px;
+      }
+
+      .topbar .container {
+        font-size: 13px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<div class="topbar">
-Quality Higienização Profissional em Manaus
-</div>
-
-<header>
-
-<div class="nav">
-
-<div class="logo">
-QUALITY
-</div>
-
-<div class="menu">
-
-<a href="#">Início</a>
-<a href="#">Serviços</a>
-<a href="#">Empresa</a>
-<a href="#">Galeria</a>
-<a href="#">Orçamento</a>
-
-</div>
-
-</div>
-
-</header>
-
-<section class="hero">
-
-<h1>
-Limpeza profissional de sofás em Manaus
-</h1>
-
-<p>
-
-Lavagem a seco e higienização profissional de estofados com atendimento premium.
-
-</p>
-
-<a href="#" class="botao">
-Solicitar orçamento
-</a>
-
-</section>
-
-<section class="servicos">
-
-<h2>
-
-Serviços Quality
-
-</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>Sofás</h3>
-<p>Higienização profissional de sofás.</p>
-</div>
-
-<div class="card">
-<h3>Colchões</h3>
-<p>Limpeza profunda de colchões.</p>
-</div>
-
-<div class="card">
-<h3>Poltronas</h3>
-<p>Limpeza profissional.</p>
-</div>
-
-<div class="card">
-<h3>Cadeiras</h3>
-<p>Limpeza completa.</p>
-</div>
-
-</div>
-
-</section>
-<section class="sobre">
-
-<div class="sobre-container">
-
-<div>
-
-<h2>
-
-Sobre a Quality
-
-</h2>
-
-<p>
-
-A Quality atua com higienização profissional de estofados em Manaus, oferecendo limpeza de sofás, colchões, poltronas, cadeiras e tapetes com atendimento organizado e apresentação premium.
-
-</p>
-
-<p>
-
-Atendemos residências, empresas, clínicas e apartamentos com equipamentos adequados para cada tipo de tecido.
-
-</p>
-
-</div>
-
-<div>
-
-<img src="sofa-limpeza.jpg" width="100%">
-
-</div>
-
-</div>
-
-</section>
-
-
-<section class="galeria">
-
-<h2 style="text-align:center;font-size:40px;margin-bottom:30px;color:#0b3158">
-
-Resultados reais
-
-</h2>
-
-<div class="galeria-grid">
-
-<img src="galeria1.jpg">
-<img src="galeria2.jpg">
-<img src="galeria3.jpg">
-<img src="galeria4.jpg">
-<img src="galeria5.jpg">
-<img src="galeria6.jpg">
-
-</div>
-
-</section>
-
-
-<section class="bairros">
-
-<h2>
-
-Atendimento em Manaus
-
-</h2>
-
-<div class="lista-bairros">
-
-<div>Adrianópolis</div>
-<div>Ponta Negra</div>
-<div>Vieiralves</div>
-<div>Aleixo</div>
-<div>Petrópolis</div>
-<div>Parque 10</div>
-<div>Chapada</div>
-<div>Flores</div>
-<div>Dom Pedro</div>
-<div>Centro</div>
-<div>Tarumã</div>
-<div>São Jorge</div>
-<div>Cidade Nova</div>
-<div>Nossa Senhora das Graças</div>
-<div>Toda Manaus</div>
-
-</div>
-
-</section>
-
-
-<section class="form">
-
-<div class="form-container">
-
-<h2 style="text-align:center;font-size:40px;margin-bottom:30px;color:#0b3158">
-
-Solicitar orçamento
-
-</h2>
-
-<form onsubmit="enviarWhats(event)">
-
-<input
-type="text"
-id="nome"
-placeholder="Nome"
-required>
-
-<input
-type="text"
-id="telefone"
-placeholder="Telefone"
-required>
-
-<input
-type="text"
-id="bairro"
-placeholder="Bairro"
-required>
-
-<select id="servico">
-
-<option>Sofá</option>
-<option>Colchão</option>
-<option>Poltrona</option>
-<option>Cadeiras</option>
-<option>Tapete</option>
-
-</select>
-
-<textarea
-id="mensagem"
-placeholder="Mensagem"></textarea>
-
-<button>
-
-Enviar pelo WhatsApp
-
-</button>
-
-</form>
-
-</div>
-
-</section>
-
-
-<footer>
-
-Quality Limpeza e Higienização Profissional em Manaus
-
-</footer>
-
-
-<a
-href="https://wa.me/5592999999999"
-style="
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25d366;
-color:white;
-padding:20px;
-border-radius:50%;
-text-decoration:none;
-font-size:22px;
-">
-
-☎
-
-</a>
-
-
-<script>
-
-function enviarWhats(e){
-
-e.preventDefault()
-
-nome=document.getElementById("nome").value
-
-telefone=document.getElementById("telefone").value
-
-bairro=document.getElementById("bairro").value
-
-servico=document.getElementById("servico").value
-
-mensagem=document.getElementById("mensagem").value
-
-
-texto=
-
-"Olá Quality!%0A%0A"
-
-+"Nome: "+nome+"%0A"
-
-+"Telefone: "+telefone+"%0A"
-
-+"Bairro: "+bairro+"%0A"
-
-+"Serviço: "+servico+"%0A"
-
-+"Mensagem: "+mensagem
-
-
-window.open(
-
-"https://wa.me/5592999999999?text="+texto
-
-)
-
-}
-
-</script>
-
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar-left">
+        <span><strong>Email:</strong> qualitylimphigienizacao@gmail.com</span>
+        <span><strong>Atendimento:</strong> Manaus e região</span>
+      </div>
+      <div class="topbar-right">
+        <span><strong>WhatsApp:</strong> (92) 99999-9999</span>
+        <span><strong>Serviço:</strong> Lavagem a seco e higienização</span>
+      </div>
+    </div>
+  </div>
+
+  <header>
+    <div class="container">
+      <nav>
+        <a href="#inicio" class="logo" aria-label="Quality">
+          <img src="logo.png" alt="Logo Quality" />
+        </a>
+
+        <div class="nav-links">
+          <a href="#inicio">Início</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#empresa">Empresa</a>
+          <a href="#galeria">Galeria</a>
+          <a href="#bairros">Bairros</a>
+          <a href="#orcamento">Orçamento</a>
+          <a href="#contactos">Contactos</a>
+        </div>
+
+        <a class="btn btn-primary" href="#orcamento">Pedir orçamento</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero" id="inicio">
+      <div class="container hero-content">
+        <div>
+          <div class="hero-badge">Higienização premium em Manaus</div>
+
+          <h1>Excelência em limpeza de estofados com imagem premium, cuidado e atendimento profissional.</h1>
+
+          <p>
+            A Quality entrega limpeza, lavagem a seco e higienização profissional de sofás, colchões,
+            poltronas, cadeiras, tapetes e estofados em geral, com foco em conforto, saúde, limpeza
+            e apresentação de alto nível.
+          </p>
+
+          <div class="hero-buttons">
+            <a class="btn btn-primary" href="#orcamento">Solicitar orçamento</a>
+            <a class="btn btn-outline" href="https://wa.me/5592999999999?text=Olá%2C%20quero%20um%20orçamento%20da%20Quality." target="_blank" rel="noopener">Falar no WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <img src="sofa-02.jpg" alt="Limpeza profissional de sofá" />
+          <h3>Serviço de higienização com padrão de excelência</h3>
+          <ul>
+            <li>Limpeza e higienização de sofás</li>
+            <li>Lavagem a seco profissional</li>
+            <li>Colchões, poltronas, cadeiras e tapetes</li>
+            <li>Atendimento residencial e empresarial</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicos">
+      <div class="container">
+        <div class="section-intro">
+          <span>Serviços especializados</span>
+          <h2>Serviços pensados para clientes que procuram limpeza, confiança e apresentação profissional.</h2>
+          <p>
+            Adaptamos cada serviço ao tipo de tecido, nível de sujidade, ambiente e necessidade do cliente.
+            Tudo com comunicação organizada e atendimento rápido pelo WhatsApp.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-number">01</div>
+            <h3>Higienização de sofás</h3>
+            <p>Limpeza profissional para sofás de 2, 3, 4 lugares, chaise longue e modelos maiores.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-number">02</div>
+            <h3>Limpeza de colchões</h3>
+            <p>Higienização de colchões de solteiro, casal, queen e king, com cuidado e acabamento profissional.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-number">03</div>
+            <h3>Lavagem a seco</h3>
+            <p>Processo profissional indicado para determinados tecidos e situações, com técnica e cuidado.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-number">04</div>
+            <h3>Poltronas</h3>
+            <p>Limpeza de poltronas decorativas, cadeiras estofadas, recepções, escritórios e clínicas.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-number">05</div>
+            <h3>Cadeiras estofadas</h3>
+            <p>Serviço ideal para salas de jantar, empresas, consultórios, salões e ambientes comerciais.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-number">06</div>
+            <h3>Tapetes</h3>
+            <p>Limpeza de tapetes conforme o material, tamanho, sujidade e necessidade do cliente.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-number">07</div>
+            <h3>Bancos automotivos</h3>
+            <p>Higienização de bancos de carros e interiores estofados para renovar a aparência interna.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-number">08</div>
+            <h3>Empresas e clínicas</h3>
+            <p>Atendimento para escritórios, clínicas, lojas, condomínios, recepções e ambientes corporativos.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="empresa">
+      <div class="container about-grid">
+        <div class="about-images">
+          <img src="sofa-03.jpg" alt="Higienização de sofá" />
+          <img src="sofa-04.jpg" alt="Limpeza de colchão" />
+          <img src="sofa-05.jpg" alt="Limpeza de poltrona" />
+          <img src="sofa-01.jpg" alt="Serviço Quality em Manaus" />
+        </div>
+
+        <div class="about-text">
+          <h2>Uma marca criada para transmitir limpeza, seriedade e confiança.</h2>
+
+          <p>
+            A Quality foi pensada para clientes que valorizam atendimento profissional, boa apresentação,
+            comunicação organizada e um serviço bem feito dentro de casa ou da empresa.
+          </p>
+
+          <p>
+            Trabalhamos com foco em higienização de estofados, lavagem a seco e limpeza profissional,
+            atendendo Manaus com cuidado, pontualidade e padrão visual premium.
+          </p>
+
+          <ul class="about-list">
+            <li>Atendimento profissional</li>
+            <li>Resposta rápida no WhatsApp</li>
+            <li>Imagem premium da marca</li>
+            <li>Limpeza de sofás e colchões</li>
+            <li>Lavagem a seco</li>
+            <li>Residências e empresas</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeria">
+      <div class="container">
+        <div class="section-intro">
+          <span>Resultados e serviços</span>
+          <h2>Estofados mais limpos, ambientes mais agradáveis e aparência renovada.</h2>
+          <p>
+            Use fotos reais dos serviços da Quality para mostrar antes e depois, sofás, colchões, poltronas,
+            cadeiras e tapetes higienizados.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="galeria-01.jpg" alt="Sofá limpo" />
+            <div class="gallery-overlay">
+              <h3>Sofás</h3>
+              <p>Higienização profissional.</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="galeria-02.jpg" alt="Colchão limpo" />
+            <div class="gallery-overlay">
+              <h3>Colchões</h3>
+              <p>Limpeza profunda.</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="galeria-03.jpg" alt="Poltrona limpa" />
+            <div class="gallery-overlay">
+              <h3>Poltronas</h3>
+              <p>Acabamento premium.</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="galeria-04.jpg" alt="Cadeiras limpas" />
+            <div class="gallery-overlay">
+              <h3>Cadeiras</h3>
+              <p>Residencial e comercial.</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="galeria-05.jpg" alt="Tapete limpo" />
+            <div class="gallery-overlay">
+              <h3>Tapetes</h3>
+              <p>Limpeza cuidadosa.</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="galeria-06.jpg" alt="Lavagem a seco" />
+            <div class="gallery-overlay">
+              <h3>Lavagem a seco</h3>
+              <p>Técnica profissional.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <h3>100%</h3>
+            <p>Foco em qualidade</p>
+          </div>
+
+          <div class="stat-card">
+            <h3>+15</h3>
+            <p>Bairros atendidos</p>
+          </div>
+
+          <div class="stat-card">
+            <h3>24h</h3>
+            <p>Resposta pelo WhatsApp</p>
+          </div>
+
+          <div class="stat-card">
+            <h3>Premium</h3>
+            <p>Imagem profissional</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="areas" id="bairros">
+      <div class="container">
+        <div class="section-intro">
+          <span>Atendimento em Manaus</span>
+          <h2>Atendemos bairros residenciais, comerciais e regiões de alto padrão.</h2>
+          <p>
+            A Quality atende toda Manaus, incluindo regiões com grande procura por limpeza e higienização profissional.
+          </p>
+        </div>
+
+        <div class="areas-grid">
+          <div class="area-card">Adrianópolis</div>
+          <div class="area-card">Ponta Negra</div>
+          <div class="area-card">Vieiralves</div>
+          <div class="area-card">Aleixo</div>
+          <div class="area-card">Petrópolis</div>
+          <div class="area-card">Parque 10</div>
+          <div class="area-card">Chapada</div>
+          <div class="area-card">Flores</div>
+          <div class="area-card">Dom Pedro</div>
+          <div class="area-card">Centro</div>
+          <div class="area-card">Tarumã</div>
+          <div class="area-card">São Jorge</div>
+          <div class="area-card">Cidade Nova</div>
+          <div class="area-card">Nossa Senhora das Graças</div>
+          <div class="area-card">Toda Manaus</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote" id="orcamento">
+      <div class="container">
+        <div class="quote-box">
+          <div class="quote-info">
+            <h2>Peça seu orçamento pelo WhatsApp de forma rápida.</h2>
+            <p>
+              Envie as informações principais e a Quality responde com mais clareza.
+              Se puder, envie também uma foto do sofá, colchão, tapete ou estofado.
+            </p>
+
+            <ul class="quote-points">
+              <li>Informe o serviço desejado</li>
+              <li>Informe o bairro em Manaus</li>
+              <li>Envie fotos do estofado</li>
+              <li>Receba orientação pelo WhatsApp</li>
+            </ul>
+          </div>
+
+          <form class="quote-form" onsubmit="enviarWhatsApp(event)">
+            <h3>Solicitar orçamento</h3>
+            <p>Preencha os dados e clique no botão para abrir o WhatsApp com a mensagem pronta.</p>
+
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="nome">Nome</label>
+                <input id="nome" type="text" placeholder="Seu nome" required />
+              </div>
+
+              <div class="form-group">
+                <label for="telefone">Telefone</label>
+                <input id="telefone" type="text" placeholder="Seu telefone" required />
+              </div>
+
+              <div class="form-group">
+                <label for="bairro">Bairro</label>
+                <input id="bairro" type="text" placeholder="Ex: Adrianópolis" required />
+              </div>
+
+              <div class="form-group">
+                <label for="servico">Serviço</label>
+                <select id="servico" required>
+                  <option value="">Escolha uma opção</option>
+                  <option>Higienização de sofá</option>
+                  <option>Limpeza de colchão</option>
+                  <option>Lavagem a seco</option>
+                  <option>Limpeza de poltronas</option>
+                  <option>Limpeza de cadeiras</option>
+                  <option>Limpeza de tapetes</option>
+                  <option>Bancos automotivos</option>
+                  <option>Outro serviço</option>
+                </select>
+              </div>
+
+              <div class="form-group full">
+                <label for="endereco">Endereço ou referência</label>
+                <input id="endereco" type="text" placeholder="Rua, condomínio ou ponto de referência" />
+              </div>
+
+              <div class="form-group full">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" placeholder="Ex: sofá 3 lugares, tem manchas, preciso para sábado..."></textarea>
+              </div>
+            </div>
+
+            <button class="btn btn-primary" type="submit">Enviar pedido pelo WhatsApp</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="contactos">
+      <div class="container">
+        <div class="section-intro">
+          <span>Contactos</span>
+          <h2>Fale com a Quality e solicite uma avaliação.</h2>
+          <p>
+            Atendimento profissional em Manaus para casas, apartamentos, empresas, clínicas,
+            escritórios e ambientes comerciais.
+          </p>
+        </div>
+
+        <div class="contacts-grid">
+          <div class="contact-card">
+            <h3>WhatsApp</h3>
+            <div class="role">Orçamentos e agendamento</div>
+            <p>(92) 99999-9999</p>
+          </div>
+
+          <div class="contact-card">
+            <h3>Email</h3>
+            <div class="role">Pedidos comerciais</div>
+            <a href="mailto:qualitylimphigienizacao@gmail.com">qualitylimphigienizacao@gmail.com</a>
+          </div>
+
+          <div class="contact-card">
+            <h3>Área de atendimento</h3>
+            <div class="role">Manaus - Amazonas</div>
+            <p>Adrianópolis, Ponta Negra, Vieiralves, Aleixo, Petrópolis e toda Manaus.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container">
+        <div class="cta-box">
+          <div>
+            <h2>Renove a aparência do seu sofá com a Quality.</h2>
+            <p>Limpeza, lavagem a seco e higienização profissional de estofados em Manaus.</p>
+          </div>
+
+          <a class="btn btn-outline" href="https://wa.me/5592999999999?text=Olá%2C%20quero%20um%20orçamento%20da%20Quality." target="_blank" rel="noopener">
+            Falar no WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <img src="logo.png" alt="Logo Quality" />
+        <div>
+          <strong>Quality Limpeza e Higienização</strong>
+          <p>Higienização profissional de estofados em Manaus.</p>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <a href="#servicos">Serviços</a>
+        <a href="#empresa">Empresa</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#orcamento">Orçamento</a>
+      </div>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/5592999999999?text=Olá%2C%20quero%20um%20orçamento%20da%20Quality." target="_blank" rel="noopener">
+    ☎
+  </a>
+
+  <script>
+    function enviarWhatsApp(event) {
+      event.preventDefault();
+
+      const nome = document.getElementById("nome").value.trim();
+      const telefone = document.getElementById("telefone").value.trim();
+      const bairro = document.getElementById("bairro").value.trim();
+      const servico = document.getElementById("servico").value.trim();
+      const endereco = document.getElementById("endereco").value.trim();
+      const mensagem = document.getElementById("mensagem").value.trim();
+
+      const numero = "5592999999999";
+
+      const texto =
+        "Olá, Quality! Gostaria de solicitar um orçamento.%0A%0A" +
+        "*Nome:* " + encodeURIComponent(nome) + "%0A" +
+        "*Telefone:* " + encodeURIComponent(telefone) + "%0A" +
+        "*Bairro:* " + encodeURIComponent(bairro) + "%0A" +
+        "*Serviço:* " + encodeURIComponent(servico) + "%0A" +
+        "*Endereço/Referência:* " + encodeURIComponent(endereco || "Não informado") + "%0A" +
+        "*Mensagem:* " + encodeURIComponent(mensagem || "Sem observações");
+
+      window.open("https://wa.me/" + numero + "?text=" + texto, "_blank");
+    }
+  </script>
 
 </body>
-
 </html>
-
-  
