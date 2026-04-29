@@ -3,1132 +3,271 @@
 
 <head>
 
-  <meta charset="UTF-8" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Quality | Higienização Profissional em Manaus</title>
 
-  <title>Quality | Higienização Profissional em Manaus</title>
+<meta name="description"
+content="Higienização profissional de sofás, colchões, poltronas, cadeiras, tapetes e bancos automotivos em Manaus. Atendimento premium com resposta rápida no WhatsApp." />
 
-  <meta name="description" content="Quality em Manaus: higienização profissional de sofás, colchões, poltronas, cadeiras, tapetes, bancos automotivos, lavagem a seco e limpeza profissional de estofados." />
+<link rel="icon" href="IMG-20260107-WA0034(1).jpg">
 
-  <meta name="keywords" content="Quality, higienização de sofá Manaus, limpeza de estofados Manaus, lavagem a seco Manaus, limpeza de colchão Manaus, limpeza de poltrona, limpeza de tapete, Adrianópolis, Ponta Negra, Vieiralves, Aleixo, Petrópolis" />
+<style>
 
-  <meta name="author" content="Quality Limpeza e Higienização" />
+:root{
+--primary:#009dff;
+--primary2:#0b6df0;
+--primary3:#083f93;
+--dark:#041327;
+--white:#fff;
+--muted:#6d86a0;
+}
 
-  <meta property="og:title" content="Quality | Higienização Profissional em Manaus" />
+body{
+margin:0;
+font-family:Arial;
+background:linear-gradient(#edf6ff,#fff);
+color:#17324d;
+}
 
-  <meta property="og:description" content="Serviços premium de higienização de estofados, lavagem a seco, sofás, colchões, poltronas, cadeiras, tapetes e bancos automotivos em Manaus." />
+.container{
+width:min(1180px,calc(100% - 32px));
+margin:auto;
+}
 
-  <meta property="og:type" content="website" />
+/* topo */
 
-  <meta property="og:image" content="IMG-20260320-WA0080.jpg" />
+.topbar{
+background:linear-gradient(90deg,#041327,#083f93);
+color:white;
+padding:10px 0;
+font-size:14px;
+}
 
-  <link rel="icon" type="image/png" href="IMG-20260107-WA0034(1).jpg" />
+.topbar .container{
+display:flex;
+justify-content:space-between;
+flex-wrap:wrap;
+}
 
-  <style>
+/* header */
 
-    :root {
+header{
+position:sticky;
+top:0;
+background:white;
+z-index:99;
+border-bottom:1px solid rgba(0,0,0,.05);
+}
 
-      --primary: #009dff;
+nav{
+display:flex;
+align-items:center;
+justify-content:space-between;
+min-height:80px;
+}
 
-      --primary-2: #0b6df0;
+.logo img{
+height:60px;
+}
 
-      --primary-3: #083f93;
+/* hero */
 
-      --dark: #041327;
+.hero{
 
-      --dark-2: #071f3c;
+min-height:92vh;
 
-      --light: #f4f9ff;
+background:
 
-      --white: #ffffff;
+linear-gradient(
 
-      --text: #17324d;
+100deg,
 
-      --muted: #6d86a0;
+rgba(4,19,39,.92),
 
-      --line: rgba(255, 255, 255, 0.14);
+rgba(7,31,60,.80),
 
-      --shadow: 0 20px 50px rgba(3, 22, 48, 0.22);
+rgba(0,126,255,.18)
 
-      --radius-xl: 28px;
+),
 
-      --radius-lg: 20px;
+url("IMG-20260320-WA0080.jpg")
 
-      --radius-md: 14px;
+center/cover;
 
-      --transition: all 0.3s ease;
+display:flex;
+align-items:center;
 
-    }
+color:white;
 
-    * {
+}
 
-      margin: 0;
+.hero-content{
 
-      padding: 0;
+display:grid;
 
-      box-sizing: border-box;
+grid-template-columns:1fr;
 
-    }
+gap:30px;
 
-    html {
+padding:80px 0;
 
-      scroll-behavior: smooth;
+}
 
-    }
+.hero h1{
 
-    body {
+font-size:clamp(34px,6vw,64px);
 
-      font-family: Arial, Helvetica, sans-serif;
+margin-bottom:20px;
 
-      background: linear-gradient(180deg, #edf6ff 0%, #ffffff 18%, #eef7ff 100%);
+}
 
-      color: var(--text);
+.hero p{
 
-      line-height: 1.6;
+font-size:18px;
 
-      overflow-x: hidden;
+margin-bottom:30px;
 
-    }
+color:#d6eaff;
 
-    img {
+}
 
-      max-width: 100%;
+.btn{
 
-      display: block;
+background:linear-gradient(135deg,var(--primary),var(--primary2));
 
-    }
+color:white;
 
-    a {
+padding:15px 30px;
 
-      text-decoration: none;
+border-radius:999px;
 
-      color: inherit;
+display:inline-block;
 
-    }
+font-weight:bold;
 
-    ul {
+}
 
-      list-style: none;
+/* serviços */
 
-    }
+.services{
 
-    .container {
+padding:90px 0;
 
-      width: min(1180px, calc(100% - 32px));
+}
 
-      margin: 0 auto;
+.services-grid{
 
-    }
+display:grid;
 
-    .topbar {
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 
-      background: linear-gradient(90deg, var(--dark), var(--primary-3));
+gap:20px;
 
-      color: var(--white);
+}
 
-      border-bottom: 1px solid rgba(255,255,255,0.08);
+.service-card{
 
-    }
+background:white;
 
-    .topbar .container {
+padding:25px;
 
-      display: flex;
+border-radius:20px;
 
-      justify-content: space-between;
+box-shadow:0 14px 38px rgba(6,47,96,.08);
 
-      align-items: center;
+}
 
-      gap: 12px;
+/* galeria */
 
-      padding: 10px 0;
+.gallery{
 
-      flex-wrap: wrap;
+padding:90px 0;
 
-      font-size: 14px;
+}
 
-    }
+.gallery-grid{
 
-    .topbar-left,
+display:grid;
 
-    .topbar-right {
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 
-      display: flex;
+gap:20px;
 
-      gap: 18px;
+}
 
-      align-items: center;
+.gallery img{
 
-      flex-wrap: wrap;
+border-radius:20px;
 
-    }
+}
 
-    .topbar strong {
+/* form */
 
-      color: #8fd7ff;
+.form{
 
-    }
+padding:90px 0;
 
-    header {
+}
 
-      position: sticky;
+input,textarea{
 
-      top: 0;
+width:100%;
 
-      z-index: 999;
+padding:15px;
 
-      backdrop-filter: blur(14px);
+margin-bottom:15px;
 
-      background: rgba(255, 255, 255, 0.88);
+border-radius:12px;
 
-      border-bottom: 1px solid rgba(8, 63, 147, 0.08);
+border:1px solid #ccc;
 
-    }
+}
 
-    nav {
+/* footer */
 
-      display: flex;
+footer{
 
-      align-items: center;
+background:#041327;
 
-      justify-content: space-between;
+color:white;
 
-      gap: 16px;
+padding:40px;
 
-      min-height: 84px;
+text-align:center;
 
-    }
+}
 
-    .logo {
+.whatsapp{
 
-      display: flex;
+position:fixed;
 
-      align-items: center;
+bottom:20px;
 
-      gap: 10px;
+right:20px;
 
-    }
+background:#25d366;
 
-    .logo img {
+width:60px;
 
-      height: 62px;
+height:60px;
 
-      width: auto;
+border-radius:50%;
 
-      object-fit: contain;
+display:flex;
 
-    }
+align-items:center;
 
-    .nav-links {
+justify-content:center;
 
-      display: flex;
+color:white;
 
-      gap: 22px;
+font-size:26px;
 
-      align-items: center;
+}
 
-      font-weight: 700;
-
-      color: var(--dark-2);
-
-    }
-
-    .nav-links a:hover {
-
-      color: var(--primary-2);
-
-    }
-
-    .btn {
-
-      display: inline-flex;
-
-      align-items: center;
-
-      justify-content: center;
-
-      gap: 10px;
-
-      min-height: 52px;
-
-      padding: 0 24px;
-
-      border-radius: 999px;
-
-      font-weight: 800;
-
-      border: none;
-
-      cursor: pointer;
-
-      transition: var(--transition);
-
-    }
-
-    .btn-primary {
-
-      background: linear-gradient(135deg, var(--primary), var(--primary-2));
-
-      color: var(--white);
-
-      box-shadow: 0 16px 35px rgba(0, 126, 255, 0.28);
-
-    }
-
-    .btn-primary:hover {
-
-      transform: translateY(-2px);
-
-      box-shadow: 0 20px 40px rgba(0, 126, 255, 0.35);
-
-    }
-
-    .btn-outline {
-
-      border: 2px solid rgba(255,255,255,0.28);
-
-      color: var(--white);
-
-      background: rgba(255,255,255,0.08);
-
-    }
-
-    .btn-outline:hover {
-
-      background: rgba(255,255,255,0.18);
-
-      transform: translateY(-2px);
-
-    }
-
-    .hero {
-
-      position: relative;
-
-      min-height: 92vh;
-
-      display: flex;
-
-      align-items: center;
-
-      background:
-
-        linear-gradient(100deg, rgba(4, 19, 39, 0.92) 0%, rgba(7, 31, 60, 0.80) 45%, rgba(0, 126, 255, 0.18) 100%),
-
-        url('IMG-20260320-WA0080.jpg') center/cover no-repeat;
-
-      color: var(--white);
-
-      overflow: hidden;
-
-    }
-
-    .hero::before,
-
-    .hero::after {
-
-      content: "";
-
-      position: absolute;
-
-      border-radius: 50%;
-
-      filter: blur(20px);
-
-      opacity: 0.35;
-
-    }
-
-    .hero::before {
-
-      width: 320px;
-
-      height: 320px;
-
-      background: #00bbff;
-
-      top: -80px;
-
-      right: -90px;
-
-    }
-
-    .hero::after {
-
-      width: 260px;
-
-      height: 260px;
-
-      background: #005eff;
-
-      bottom: -90px;
-
-      left: -70px;
-
-    }
-
-    .hero-content {
-
-      position: relative;
-
-      z-index: 2;
-
-      display: grid;
-
-      grid-template-columns: 1.15fr 0.85fr;
-
-      gap: 28px;
-
-      align-items: center;
-
-      padding: 80px 0;
-
-    }
-
-    .hero-badge {
-
-      display: inline-flex;
-
-      align-items: center;
-
-      gap: 8px;
-
-      background: rgba(255,255,255,0.12);
-
-      border: 1px solid rgba(255,255,255,0.14);
-
-      color: #bde7ff;
-
-      padding: 10px 18px;
-
-      border-radius: 999px;
-
-      font-weight: 700;
-
-      margin-bottom: 18px;
-
-    }
-
-    .hero h1 {
-
-      font-size: clamp(36px, 6vw, 72px);
-
-      line-height: 1.05;
-
-      margin-bottom: 18px;
-
-      letter-spacing: -1.2px;
-
-    }
-
-    .hero p {
-
-      font-size: 18px;
-
-      color: #d6eaff;
-
-      max-width: 700px;
-
-      margin-bottom: 28px;
-
-    }
-
-    .hero-buttons {
-
-      display: flex;
-
-      gap: 14px;
-
-      flex-wrap: wrap;
-
-    }
-
-    .hero-card {
-
-      background: linear-gradient(180deg, rgba(255,255,255,0.16), rgba(255,255,255,0.08));
-
-      border: 1px solid rgba(255,255,255,0.16);
-
-      border-radius: var(--radius-xl);
-
-      padding: 26px;
-
-      box-shadow: var(--shadow);
-
-      backdrop-filter: blur(12px);
-
-    }
-
-    .hero-card img {
-
-      width: 100%;
-
-      border-radius: 22px;
-
-      margin-bottom: 18px;
-
-      border: 1px solid rgba(255,255,255,0.16);
-
-    }
-
-    .hero-card h3 {
-
-      font-size: 22px;
-
-      margin-bottom: 10px;
-
-    }
-
-    .hero-card ul li {
-
-      padding: 8px 0;
-
-      border-bottom: 1px solid rgba(255,255,255,0.12);
-
-      color: #e5f3ff;
-
-    }
-
-    .hero-card ul li:last-child {
-
-      border-bottom: none;
-
-    }
-
-    section {
-
-      padding: 92px 0;
-
-    }
-
-    .section-intro {
-
-      text-align: center;
-
-      max-width: 800px;
-
-      margin: 0 auto 46px;
-
-    }
-
-    .section-intro span {
-
-      display: inline-block;
-
-      padding: 8px 16px;
-
-      border-radius: 999px;
-
-      background: rgba(0, 157, 255, 0.09);
-
-      color: var(--primary-3);
-
-      font-weight: 800;
-
-      margin-bottom: 14px;
-
-    }
-
-    .section-intro h2 {
-
-      font-size: clamp(30px, 4vw, 52px);
-
-      line-height: 1.1;
-
-      margin-bottom: 14px;
-
-      color: var(--dark);
-
-    }
-
-    .section-intro p {
-
-      color: var(--muted);
-
-      font-size: 17px;
-
-    }
-
-    .services-grid {
-
-      display: grid;
-
-      grid-template-columns: repeat(4, 1fr);
-
-      gap: 18px;
-
-    }
-
-    .service-card {
-
-      background: var(--white);
-
-      border-radius: var(--radius-lg);
-
-      padding: 26px;
-
-      box-shadow: 0 14px 38px rgba(6, 47, 96, 0.08);
-
-      border: 1px solid rgba(8, 63, 147, 0.08);
-
-      transition: var(--transition);
-
-      position: relative;
-
-      overflow: hidden;
-
-    }
-
-    .service-card::before {
-
-      content: "";
-
-      position: absolute;
-
-      inset: 0 auto auto 0;
-
-      width: 100%;
-
-      height: 4px;
-
-      background: linear-gradient(90deg, var(--primary), var(--primary-2));
-
-    }
-
-    .service-card:hover {
-
-      transform: translateY(-8px);
-
-      box-shadow: 0 22px 44px rgba(6, 47, 96, 0.12);
-
-    }
-
-    .service-number {
-
-      font-size: 14px;
-
-      color: var(--primary-2);
-
-      font-weight: 900;
-
-      margin-bottom: 10px;
-
-    }
-
-    .service-card h3 {
-
-      font-size: 22px;
-
-      margin-bottom: 10px;
-
-      color: var(--dark);
-
-    }
-
-    .service-card p {
-
-      color: var(--muted);
-
-      font-size: 15px;
-
-    }
-
-    .about {
-
-      background: linear-gradient(180deg, #f7fbff 0%, #edf6ff 100%);
-
-    }
-
-    .about-grid {
-
-      display: grid;
-
-      grid-template-columns: 0.95fr 1.05fr;
-
-      gap: 30px;
-
-      align-items: center;
-
-    }
-
-    .about-images {
-
-      display: grid;
-
-      grid-template-columns: 1fr 1fr;
-
-      gap: 16px;
-
-    }
-
-    .about-images img {
-
-      border-radius: 24px;
-
-      min-height: 240px;
-
-      object-fit: cover;
-
-      box-shadow: 0 18px 36px rgba(7, 31, 60, 0.12);
-
-    }
-
-    .about-text h2 {
-
-      font-size: clamp(30px, 4vw, 50px);
-
-      line-height: 1.12;
-
-      margin-bottom: 18px;
-
-      color: var(--dark);
-
-    }
-
-    .about-text p {
-
-      color: var(--muted);
-
-      margin-bottom: 18px;
-
-      font-size: 17px;
-
-    }
-
-    .about-list {
-
-      display: grid;
-
-      grid-template-columns: 1fr 1fr;
-
-      gap: 12px;
-
-      margin-top: 22px;
-
-    }
-
-    .about-list li {
-
-      background: var(--white);
-
-      border-radius: 16px;
-
-      padding: 14px 16px;
-
-      font-weight: 700;
-
-      color: var(--dark-2);
-
-      box-shadow: 0 10px 26px rgba(7, 31, 60, 0.06);
-
-    }
-
-    .gallery-grid {
-
-      display: grid;
-
-      grid-template-columns: repeat(3, 1fr);
-
-      gap: 18px;
-
-    }
-
-    .gallery-item {
-
-      position: relative;
-
-      border-radius: 22px;
-
-      overflow: hidden;
-
-      min-height: 280px;
-
-      box-shadow: 0 18px 36px rgba(7, 31, 60, 0.1);
-
-    }
-
-    .gallery-item img {
-
-      width: 100%;
-
-      height: 100%;
-
-      object-fit: cover;
-
-      transition: transform 0.45s ease;
-
-    }
-
-    .gallery-item:hover img {
-
-      transform: scale(1.06);
-
-    }
-
-    .gallery-overlay {
-
-      position: absolute;
-
-      inset: auto 0 0 0;
-
-      padding: 18px;
-
-      background: linear-gradient(180deg, transparent 0%, rgba(4, 19, 39, 0.88) 100%);
-
-      color: var(--white);
-
-    }
-
-    .gallery-overlay h3 {
-
-      font-size: 18px;
-
-      margin-bottom: 4px;
-
-    }
-    .stats {
-
-      background: linear-gradient(120deg, var(--dark), var(--primary-3));
-
-      color: var(--white);
-
-    }
-
-    .stats-grid {
-
-      display: grid;
-
-      grid-template-columns: repeat(4, 1fr);
-
-      gap: 18px;
-
-    }
-
-    .stat-card {
-
-      background: rgba(255,255,255,0.08);
-
-      border: 1px solid rgba(255,255,255,0.12);
-
-      border-radius: 22px;
-
-      padding: 28px;
-
-      text-align: center;
-
-      backdrop-filter: blur(8px);
-
-    }
-
-    .stat-card h3 {
-
-      font-size: 44px;
-
-      line-height: 1;
-
-      margin-bottom: 10px;
-
-      color: #8fd7ff;
-
-    }
-
-    .stat-card p {
-
-      color: #d7eaff;
-
-      font-weight: 700;
-
-    }
-
-    .quote {
-
-      background: linear-gradient(180deg, #f7fbff 0%, #ffffff 100%);
-
-    }
-
-    .quote-box {
-
-      display: grid;
-
-      grid-template-columns: 0.9fr 1.1fr;
-
-      gap: 26px;
-
-      align-items: stretch;
-
-      background: var(--white);
-
-      border-radius: 30px;
-
-      box-shadow: 0 24px 55px rgba(7, 31, 60, 0.12);
-
-      overflow: hidden;
-
-      border: 1px solid rgba(8, 63, 147, 0.08);
-
-    }
-
-    .quote-info {
-
-      background:
-
-        linear-gradient(180deg, rgba(4, 19, 39, 0.9), rgba(11, 109, 240, 0.86)),
-
-        url('IMG-20260320-WA0087.jpg') center/cover no-repeat;
-
-      color: var(--white);
-
-      padding: 38px;
-
-      min-height: 100%;
-
-    }
-
-    .quote-info h2 {
-
-      font-size: clamp(28px, 4vw, 46px);
-
-      line-height: 1.1;
-
-      margin-bottom: 16px;
-
-    }
-
-    .quote-info p {
-
-      color: #ddedff;
-
-      margin-bottom: 20px;
-
-    }
-
-    .quote-points li {
-
-      padding: 12px 0;
-
-      border-bottom: 1px solid rgba(255,255,255,0.14);
-
-      font-weight: 700;
-
-    }
-
-    .quote-points li:last-child {
-
-      border-bottom: none;
-
-    }
-
-    .quote-form {
-
-      padding: 38px;
-
-    }
-
-    .quote-form h3 {
-
-      font-size: 30px;
-
-      color: var(--dark);
-
-      margin-bottom: 8px;
-
-    }
-
-    .quote-form p {
-
-      color: var(--muted);
-
-      margin-bottom: 24px;
-
-    }
-
-    .form-grid {
-
-      display: grid;
-
-      grid-template-columns: 1fr 1fr;
-
-      gap: 14px;
-
-    }
-
-    .form-group {
-
-      display: flex;
-
-      flex-direction: column;
-
-      gap: 8px;
-
-      margin-bottom: 14px;
-
-    }
-
-    .form-group.full {
-
-      grid-column: 1 / -1;
-
-    }
-
-    label {
-
-      font-size: 14px;
-
-      font-weight: 800;
-
-      color: var(--dark-2);
-
-    }
-
-    input,
-
-    select,
-
-    textarea {
-
-      width: 100%;
-
-      border: 1px solid rgba(8, 63, 147, 0.14);
-
-      background: #f7fbff;
-
-      color: var(--text);
-
-      border-radius: 14px;
-
-      padding: 15px 16px;
-
-      outline: none;
-
-      font-size: 15px;
-
-      transition: var(--transition);
-
-    }
-
-    textarea {
-
-      resize: vertical;
-
-      min-height: 130px;
-
-    }
-
-    .contacts-grid {
-
-      display: grid;
-
-      grid-template-columns: repeat(3, 1fr);
-
-      gap: 18px;
-
-    }
-
-    .contact-card {
-
-      background: var(--white);
-
-      border-radius: 22px;
-
-      padding: 26px;
-
-      border: 1px solid rgba(8, 63, 147, 0.08);
-
-      box-shadow: 0 16px 34px rgba(7, 31, 60, 0.08);
-
-    }
-
-    .contact-card h3 {
-
-      font-size: 22px;
-
-      color: var(--dark);
-
-      margin-bottom: 8px;
-
-    }
-
-    .contact-card .role {
-
-      color: var(--primary-2);
-
-      font-weight: 800;
-
-      margin-bottom: 14px;
-
-    }
-
-    .cta-band {
-
-      padding: 0 0 92px;
-
-    }
-
-    .cta-box {
-
-      background: linear-gradient(135deg, var(--primary), var(--primary-3));
-
-      border-radius: 30px;
-
-      padding: 36px;
-
-      display: flex;
-
-      align-items: center;
-
-      justify-content: space-between;
-
-      gap: 20px;
-
-      color: var(--white);
-
-      box-shadow: 0 24px 50px rgba(0, 126, 255, 0.25);
-
-    }
-
-    footer {
-
-      background: linear-gradient(180deg, var(--dark) 0%, #020d1d 100%);
-
-      color: var(--white);
-
-      padding: 36px 0;
-
-      border-top: 1px solid rgba(255,255,255,0.08);
-
-    }
-
-    .whatsapp-float {
-
-      position: fixed;
-
-      right: 18px;
-
-      bottom: 18px;
-
-      z-index: 999;
-
-      width: 62px;
-
-      height: 62px;
-
-      display: flex;
-
-      align-items: center;
-
-      justify-content: center;
-
-      border-radius: 50%;
-
-      background: linear-gradient(135deg, #25d366, #17b858);
-
-      color: var(--white);
-
-      font-size: 26px;
-
-    }
-
-  </style>
+</style>
 
 </head>
 
@@ -1138,21 +277,11 @@
 
 <div class="container">
 
-<div class="topbar-left">
+<span>WhatsApp: +55 92 9356-4442</span>
 
-<span><strong>WhatsApp:</strong> +55 92 9356-4442</span>
+<span>Atendimento: Segunda a Sábado</span>
 
-<span><strong>Atendimento:</strong> Segunda a Sábado</span>
-
-</div>
-
-<div class="topbar-right">
-
-<span><strong>Manaus:</strong> Adrianópolis</span>
-
-<span><strong>Região:</strong> Toda Manaus</span>
-
-</div>
+<span>Manaus: Adrianópolis • Vieiralves • Aleixo • Ponta Negra</span>
 
 </div>
 
@@ -1164,31 +293,17 @@
 
 <nav>
 
-<a href="#inicio" class="logo">
+<div class="logo">
 
 <img src="IMG-20260107-WA0034(1).jpg">
 
-</a>
-
-<div class="nav-links">
-
-<a href="#inicio">Início</a>
-
-<a href="#servicos">Serviços</a>
-
-<a href="#empresa">Empresa</a>
-
-<a href="#galeria">Galeria</a>
-
-<a href="#orcamento">Orçamento</a>
-
-<a href="#contactos">Contactos</a>
-
 </div>
 
-<a class="btn btn-primary"
+<a
 
-href="https://wa.me/559293564442?text=Olá%20quero%20um%20orçamento%20Quality">
+href="https://wa.me/559293564442"
+
+class="btn">
 
 Solicitar orçamento
 
@@ -1200,21 +315,15 @@ Solicitar orçamento
 
 </header>
 
-<section class="hero" id="inicio">
+<section class="hero">
 
 <div class="container hero-content">
 
 <div>
 
-<div class="hero-badge">
-
-Higienização premium em Manaus
-
-</div>
-
 <h1>
 
-Excelência em higienização de estofados com atendimento profissional.
+Excelência em higienização de estofados com atendimento profissional
 
 </h1>
 
@@ -1224,13 +333,13 @@ Limpeza profunda de sofás, colchões, poltronas, cadeiras, tapetes e bancos aut
 
 </p>
 
-<div class="hero-buttons">
+<a
 
-<a class="btn btn-primary"
+href="https://wa.me/559293564442"
 
-href="https://wa.me/559293564442?text=Olá%20quero%20um%20orçamento">
+class="btn">
 
-Solicitar orçamento
+Falar no WhatsApp
 
 </a>
 
@@ -1238,27 +347,29 @@ Solicitar orçamento
 
 </div>
 
-<div class="hero-card">
+</section>
 
-<img src="IMG-20260320-WA0082.jpg">
+<section class="services">
 
-<h3>
+<div class="container">
 
-Serviços profissionais Quality
+<div class="services-grid">
 
-</h3>
+<div class="service-card">Sofás</div>
 
-<ul>
+<div class="service-card">Colchões</div>
 
-<li>Higienização de sofás</li>
+<div class="service-card">Poltronas</div>
 
-<li>Limpeza de colchões</li>
+<div class="service-card">Cadeiras</div>
 
-<li>Lavagem a seco</li>
+<div class="service-card">Tapetes</div>
 
-<li>Bancos automotivos</li>
+<div class="service-card">Bancos automotivos</div>
 
-</ul>
+<div class="service-card">Lavagem a seco</div>
+
+<div class="service-card">Higienização profissional</div>
 
 </div>
 
@@ -1266,17 +377,67 @@ Serviços profissionais Quality
 
 </section>
 
-<footer>
+<section class="gallery">
 
 <div class="container">
 
-Quality Higienização Profissional em Manaus
+<div class="gallery-grid">
+
+<img src="IMG-20260320-WA0082.jpg">
+
+<img src="IMG-20260320-WA0084.jpg">
+
+<img src="IMG-20260320-WA0087.jpg">
+
+<img src="IMG-20260320-WA0095.jpg">
+
+<img src="IMG-20260320-WA0097.jpg">
+
+<img src="IMG-20260320-WA0100.jpg">
 
 </div>
 
+</div>
+
+</section>
+
+<section class="form">
+
+<div class="container">
+
+<form
+
+action="https://wa.me/559293564442"
+
+target="_blank">
+
+<input placeholder="Nome">
+
+<input placeholder="Telefone">
+
+<textarea placeholder="Mensagem"></textarea>
+
+<button class="btn">
+
+Enviar WhatsApp
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<footer>
+
+Quality Higienização Profissional em Manaus
+
 </footer>
 
-<a class="whatsapp-float"
+<a
+
+class="whatsapp"
 
 href="https://wa.me/559293564442">
 
