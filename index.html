@@ -1,126 +1,561 @@
-<!DOCTYPE html><html lang="pt-br">
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Quality Limpeza & Higienização Profissional</title>
-<meta name="description" content="Lavagem a seco e higienização profissional de sofás, colchões e estofados em Manaus. Atendimento rápido via WhatsApp."><style>
-body{
-margin:0;
-font-family:Arial, sans-serif;
-background:#f5f8fc;
-color:#222;
+
+<title>Quality | Limpeza e Higienização Profissional em Manaus</title>
+
+<meta name="description"
+content="Higienização profissional de sofás, colchões, poltronas, cadeiras e tapetes em Manaus. Atendimento em Adrianópolis, Vieiralves, Aleixo, Petrópolis, Ponta Negra e toda Manaus.">
+
+<style>
+
+:root{
+--azul1:#04111f;
+--azul2:#08233f;
+--azul3:#0b3158;
+--azul4:#0d4f8f;
+--azul5:#1398ff;
+--azul6:#36b7ff;
+--branco:#fff;
+--cinza:#5d7084;
 }
 
-header{
-background:linear-gradient(120deg,#0d6efd,#3fa9ff);
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+background:#f4fbff;
+color:#11243a;
+}
+
+/* TOPO */
+
+.topbar{
+background:linear-gradient(90deg,var(--azul1),var(--azul3),var(--azul5));
 color:white;
-padding:60px 20px;
+padding:10px;
+text-align:center;
+font-size:14px;
+}
+
+/* MENU */
+
+header{
+background:white;
+position:sticky;
+top:0;
+z-index:10;
+box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+
+.nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 25px;
+max-width:1200px;
+margin:auto;
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+color:var(--azul4);
+}
+
+.menu a{
+margin-left:20px;
+text-decoration:none;
+font-weight:bold;
+color:var(--azul2);
+}
+
+.menu a:hover{
+color:var(--azul5);
+}
+
+/* HERO */
+
+.hero{
+background:linear-gradient(120deg,var(--azul1),var(--azul4),var(--azul5));
+color:white;
+padding:100px 20px;
 text-align:center;
 }
 
-header h1{
-font-size:38px;
-margin-bottom:15px;
-}
-
-header p{
-font-size:18px;
-max-width:600px;
-margin:auto;
-}
-
-.btn{
-background:#25D366;
-color:white;
-padding:15px 30px;
-margin-top:25px;
-display:inline-block;
-text-decoration:none;
-font-weight:bold;
-border-radius:6px;
-}
-
-section{
-padding:60px 20px;
-max-width:1100px;
-margin:auto;
-}
-
-h2{
-color:#0d6efd;
+.hero h1{
+font-size:52px;
 margin-bottom:20px;
 }
 
-.services{
+.hero p{
+font-size:20px;
+max-width:700px;
+margin:auto;
+margin-bottom:30px;
+}
+
+.botao{
+background:#25d366;
+padding:15px 30px;
+border-radius:40px;
+text-decoration:none;
+color:white;
+font-weight:bold;
+}
+
+/* SERVICOS */
+
+.servicos{
+padding:80px 20px;
+max-width:1200px;
+margin:auto;
+}
+
+.servicos h2{
+text-align:center;
+font-size:40px;
+margin-bottom:40px;
+color:var(--azul3);
+}
+
+.grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
+grid-template-columns:repeat(4,1fr);
+gap:25px;
 }
 
 .card{
 background:white;
 padding:25px;
-border-radius:10px;
-box-shadow:0 5px 18px rgba(0,0,0,0.08);
+border-radius:20px;
+box-shadow:0 8px 30px rgba(0,0,0,.08);
 }
 
-.form-box{
+.card h3{
+margin-bottom:10px;
+}
+
+/* SOBRE */
+
+.sobre{
 background:white;
-padding:35px;
-border-radius:12px;
-box-shadow:0 5px 25px rgba(0,0,0,0.1);
+padding:90px 20px;
 }
 
-input,select{
+.sobre-container{
+max-width:1100px;
+margin:auto;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+}
+
+.sobre h2{
+font-size:40px;
+color:var(--azul3);
+margin-bottom:20px;
+}
+
+/* GALERIA */
+
+.galeria{
+padding:80px 20px;
+background:#eef8ff;
+}
+
+.galeria-grid{
+max-width:1100px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+.galeria img{
+width:100%;
+border-radius:20px;
+}
+
+/* BAIRROS */
+
+.bairros{
+padding:80px 20px;
+background:linear-gradient(120deg,var(--azul1),var(--azul4));
+color:white;
+}
+
+.bairros h2{
+text-align:center;
+margin-bottom:30px;
+font-size:40px;
+}
+
+.lista-bairros{
+display:grid;
+grid-template-columns:repeat(5,1fr);
+gap:15px;
+max-width:1100px;
+margin:auto;
+}
+
+.lista-bairros div{
+background:rgba(255,255,255,.15);
+padding:15px;
+border-radius:20px;
+text-align:center;
+}
+
+/* FORM */
+
+.form{
+padding:80px 20px;
+background:white;
+}
+
+.form-container{
+max-width:700px;
+margin:auto;
+}
+
+.form input,
+.form select,
+.form textarea{
+
 width:100%;
 padding:15px;
 margin-bottom:15px;
+border-radius:15px;
 border:1px solid #ccc;
-border-radius:6px;
+
 }
+
+.form button{
+background:#25d366;
+color:white;
+border:none;
+padding:18px;
+width:100%;
+font-weight:bold;
+border-radius:30px;
+}
+
+/* FOOTER */
 
 footer{
-background:#0d6efd;
+background:var(--azul1);
 color:white;
-padding:40px 20px;
+padding:40px;
 text-align:center;
 }
-</style><script>
-function enviarWhats(){
 
-var nome=document.getElementById("nome").value;
-var telefone=document.getElementById("telefone").value;
-var endereco=document.getElementById("endereco").value;
-var servico=document.getElementById("servico").value;
+</style>
 
-var msg="Olá, meu nome é "+nome+".%0A"
+</head>
+
+<body>
+
+<div class="topbar">
+Quality Higienização Profissional em Manaus
+</div>
+
+<header>
+
+<div class="nav">
+
+<div class="logo">
+QUALITY
+</div>
+
+<div class="menu">
+
+<a href="#">Início</a>
+<a href="#">Serviços</a>
+<a href="#">Empresa</a>
+<a href="#">Galeria</a>
+<a href="#">Orçamento</a>
+
+</div>
+
+</div>
+
+</header>
+
+<section class="hero">
+
+<h1>
+Limpeza profissional de sofás em Manaus
+</h1>
+
+<p>
+
+Lavagem a seco e higienização profissional de estofados com atendimento premium.
+
+</p>
+
+<a href="#" class="botao">
+Solicitar orçamento
+</a>
+
+</section>
+
+<section class="servicos">
+
+<h2>
+
+Serviços Quality
+
+</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Sofás</h3>
+<p>Higienização profissional de sofás.</p>
+</div>
+
+<div class="card">
+<h3>Colchões</h3>
+<p>Limpeza profunda de colchões.</p>
+</div>
+
+<div class="card">
+<h3>Poltronas</h3>
+<p>Limpeza profissional.</p>
+</div>
+
+<div class="card">
+<h3>Cadeiras</h3>
+<p>Limpeza completa.</p>
+</div>
+
+</div>
+
+</section>
+<section class="sobre">
+
+<div class="sobre-container">
+
+<div>
+
+<h2>
+
+Sobre a Quality
+
+</h2>
+
+<p>
+
+A Quality atua com higienização profissional de estofados em Manaus, oferecendo limpeza de sofás, colchões, poltronas, cadeiras e tapetes com atendimento organizado e apresentação premium.
+
+</p>
+
+<p>
+
+Atendemos residências, empresas, clínicas e apartamentos com equipamentos adequados para cada tipo de tecido.
+
+</p>
+
+</div>
+
+<div>
+
+<img src="sofa-limpeza.jpg" width="100%">
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="galeria">
+
+<h2 style="text-align:center;font-size:40px;margin-bottom:30px;color:#0b3158">
+
+Resultados reais
+
+</h2>
+
+<div class="galeria-grid">
+
+<img src="galeria1.jpg">
+<img src="galeria2.jpg">
+<img src="galeria3.jpg">
+<img src="galeria4.jpg">
+<img src="galeria5.jpg">
+<img src="galeria6.jpg">
+
+</div>
+
+</section>
+
+
+<section class="bairros">
+
+<h2>
+
+Atendimento em Manaus
+
+</h2>
+
+<div class="lista-bairros">
+
+<div>Adrianópolis</div>
+<div>Ponta Negra</div>
+<div>Vieiralves</div>
+<div>Aleixo</div>
+<div>Petrópolis</div>
+<div>Parque 10</div>
+<div>Chapada</div>
+<div>Flores</div>
+<div>Dom Pedro</div>
+<div>Centro</div>
+<div>Tarumã</div>
+<div>São Jorge</div>
+<div>Cidade Nova</div>
+<div>Nossa Senhora das Graças</div>
+<div>Toda Manaus</div>
+
+</div>
+
+</section>
+
+
+<section class="form">
+
+<div class="form-container">
+
+<h2 style="text-align:center;font-size:40px;margin-bottom:30px;color:#0b3158">
+
+Solicitar orçamento
+
+</h2>
+
+<form onsubmit="enviarWhats(event)">
+
+<input
+type="text"
+id="nome"
+placeholder="Nome"
+required>
+
+<input
+type="text"
+id="telefone"
+placeholder="Telefone"
+required>
+
+<input
+type="text"
+id="bairro"
+placeholder="Bairro"
+required>
+
+<select id="servico">
+
+<option>Sofá</option>
+<option>Colchão</option>
+<option>Poltrona</option>
+<option>Cadeiras</option>
+<option>Tapete</option>
+
+</select>
+
+<textarea
+id="mensagem"
+placeholder="Mensagem"></textarea>
+
+<button>
+
+Enviar pelo WhatsApp
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+
+<footer>
+
+Quality Limpeza e Higienização Profissional em Manaus
+
+</footer>
+
+
+<a
+href="https://wa.me/5592999999999"
+style="
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25d366;
+color:white;
+padding:20px;
+border-radius:50%;
+text-decoration:none;
+font-size:22px;
+">
+
+☎
+
+</a>
+
+
+<script>
+
+function enviarWhats(e){
+
+e.preventDefault()
+
+nome=document.getElementById("nome").value
+
+telefone=document.getElementById("telefone").value
+
+bairro=document.getElementById("bairro").value
+
+servico=document.getElementById("servico").value
+
+mensagem=document.getElementById("mensagem").value
+
+
+texto=
+
+"Olá Quality!%0A%0A"
+
++"Nome: "+nome+"%0A"
+
 +"Telefone: "+telefone+"%0A"
-+"Endereço: "+endereco+"%0A"
-+"Serviço desejado: "+servico;
 
-window.open("https://wa.me/559293564442?text="+msg,"_blank");
++"Bairro: "+bairro+"%0A"
+
++"Serviço: "+servico+"%0A"
+
++"Mensagem: "+mensagem
+
+
+window.open(
+
+"https://wa.me/5592999999999?text="+texto
+
+)
+
 }
-</script></head><body><header><h1>Lavagem a seco e higienização profissional de estofados em Manaus</h1><p>Sofás • Colchões • Poltronas • Tapetes • Estofados em geral com atendimento rápido e profissional</p><a class="btn" href="https://wa.me/559293564442">Solicitar orçamento pelo WhatsApp</a>
 
-</header><section><h2>Serviços</h2><div class="services"><div class="card">
-<h3>Lavagem a seco de sofás</h3>
-<p>Limpeza profunda removendo sujeira, manchas e odores.</p>
-</div><div class="card">
-<h3>Higienização de colchões</h3>
-<p>Eliminação de ácaros, bactérias e fungos.</p>
-</div><div class="card">
-<h3>Poltronas e cadeiras</h3>
-<p>Tratamento especializado preservando o tecido.</p>
-</div><div class="card">
-<h3>Tapetes</h3>
-<p>Limpeza profunda com técnicas profissionais.</p>
-</div></div></section><section><h2>Solicitar orçamento rápido</h2><div class="form-box"><input id="nome" placeholder="Seu nome"><input id="telefone" placeholder="Seu telefone"><input id="endereco" placeholder="Seu endereço"><select id="servico">
-<option>Lavagem de sofá</option>
-<option>Higienização de colchão</option>
-<option>Limpeza de poltronas</option>
-<option>Limpeza de tapetes</option>
-<option>Outro serviço</option>
-</select><button class="btn" onclick="enviarWhats()">Enviar pelo WhatsApp</button>
+</script>
 
-</div></section><section><h2>Atendemos em Manaus</h2><p>Adrianópolis • Ponta Negra • Vieiralves • Petrópolis • Aleixo • Dom Pedro e toda Manaus</p></section><footer><p>Quality Limpeza & Higienização Profissional</p><p>WhatsApp: +55 92 9356-4442</p></footer></body>
+
+</body>
+
 </html>
+
+  
